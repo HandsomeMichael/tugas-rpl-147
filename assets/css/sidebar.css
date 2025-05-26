@@ -82,26 +82,62 @@ tr.content-row td.sidebar {
     text-align: center;
 }
 
-.news-item {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px dashed var(--light-gray);
+/* Maps Container */
+.maps-container {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.news-item:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
+/* Pengumuman List */
+.pengumuman-list {
+    margin: 15px 0;
 }
 
-.news-title {
+.pengumuman-item {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.pengumuman-item:hover {
+    background-color: rgba(30, 136, 229, 0.05);
+    padding-left: 5px;
+}
+
+.pengumuman-title {
     font-weight: 600;
-    margin-bottom: 5px;
     color: var(--dark);
+    margin-bottom: 3px;
     font-size: 0.95rem;
 }
 
-.news-date {
+.pengumuman-date {
     font-size: 0.8rem;
     color: var(--gray);
+}
+
+.lihat-semua-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.lihat-semua-btn:hover {
+    background: var(--secondary);
+}
+
+.lihat-semua-btn i {
+    margin-right: 8px;
 }
