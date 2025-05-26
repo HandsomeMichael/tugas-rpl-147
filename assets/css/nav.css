@@ -1,0 +1,48 @@
+/* Navigation Styles */
+tr.nav-row td {
+    background-color: white;
+    padding: 0;
+    height: 60px;
+    border-bottom: 1px solid var(--light-gray);
+    transition: all 0.3s ease;
+}
+
+.nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.nav-item:hover {
+    background-color: rgba(30, 136, 229, 0.1);
+    color: var(--primary);
+}
+
+.nav-item.active {
+    color: var(--primary);
+}
+
+.nav-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 3px 3px 0 0;
+}
+
+.nav-item i {
+    margin-right: 8px;
+    font-size: 0.9rem;
+}

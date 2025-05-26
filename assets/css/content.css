@@ -1,0 +1,183 @@
+/* Content Styles */
+tr.content-row td.main-content {
+    padding: 30px;
+    vertical-align: top;
+    background-color: white;
+}
+
+.school-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.content-title {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.content-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+.content-text {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+    text-align: justify;
+    color: var(--gray);
+}
+
+/* Features Section */
+.features-section {
+    margin: 40px 0;
+}
+
+.features-section h2 {
+    color: var(--secondary);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.features-section h2 i {
+    margin-right: 10px;
+    color: var(--accent);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border: 1px solid var(--light-gray);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(30, 136, 229, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.feature-card h3 {
+    margin: 0 0 10px;
+    color: var(--secondary);
+}
+
+.feature-card p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Majors Section */
+.majors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.major-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--light-gray);
+}
+
+.major-card:hover {
+    transform: translateY(-5px);
+}
+
+.major-icon {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.major-card h2 {
+    margin: 20px 20px 10px;
+    color: var(--secondary);
+}
+
+.major-card p {
+    margin: 0 20px 15px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+.major-skills {
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.major-skills li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--light-gray);
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+}
+
+.major-skills li:last-child {
+    border-bottom: none;
+}
+
+.major-skills i {
+    margin-right: 10px;
+    color: var(--accent);
+}
+
+.major-button {
+    display: block;
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.major-button:hover {
+    background: var(--secondary);
+}
