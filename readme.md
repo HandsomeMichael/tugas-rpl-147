@@ -1,6 +1,3 @@
+To Do :
 
-SMK Keren wow
-
-- modular
-- rico
-- omban
+- Seperate styles

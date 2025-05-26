@@ -282,3 +282,101 @@ tr.content-row td.main-content {
 .tujuan-card .section-header i {
     color: #FF9800;
 }
+
+/* Guru & Staff Styles */
+.staff-section {
+    margin: 40px 0;
+}
+
+.staff-section h2 {
+    color: var(--secondary);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.staff-section h2 i {
+    margin-right: 10px;
+    color: var(--primary);
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.staff-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+}
+
+.staff-photo {
+    width: 100px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.staff-info {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.staff-info h3 {
+    margin: 0 0 5px;
+    color: var(--secondary);
+    font-size: 1.1rem;
+}
+
+.staff-position {
+    margin: 0 0 8px;
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.staff-certification {
+    margin: 0 0 10px;
+    color: var(--gray);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.staff-certification i {
+    margin-right: 5px;
+    color: var(--accent);
+}
+
+.staff-contact {
+    display: flex;
+    gap: 10px;
+}
+
+.staff-contact a {
+    color: var(--primary);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(30, 136, 229, 0.1);
+    transition: all 0.3s ease;
+}
+
+.staff-contact a:hover {
+    background: var(--primary);
+    color: white;
+}
