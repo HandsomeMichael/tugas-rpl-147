@@ -31,6 +31,40 @@ table {
     margin-bottom: 20px;
 }
 
+/* Content Styles */
+
+tr.content-row td.main-content {
+    padding: 30px;
+    vertical-align: top;
+    background-color: white;
+}
+
+.content-title {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.content-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+.content-text {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+    text-align: justify;
+    color: var(--gray);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     tr.content-row td.main-content,
@@ -56,9 +90,5 @@ table {
     .logo {
         margin-right: 0;
         margin-bottom: 10px;
-    }
-    
-    .majors-container {
-        grid-template-columns: 1fr;
     }
 }

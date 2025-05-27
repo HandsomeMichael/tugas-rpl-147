@@ -1,0 +1,180 @@
+
+/* Image */
+.school-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Keunggulan */
+.keunggulan-section {
+    margin: 60px 0;
+}
+
+.keunggulan-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.keunggulan-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.keunggulan-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 1.2rem;
+}
+
+.keunggulan-content h3 {
+    margin: 0 0 5px;
+    color: var(--secondary);
+}
+
+.keunggulan-content p {
+    margin: 0;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+/* Jurusan */
+.jurusan-section {
+    margin: 50px 0;
+}
+
+.jurusan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.jurusan-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.jurusan-card:hover {
+    transform: translateY(-5px);
+}
+
+.jurusan-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Color Coding */
+.jurusan-card.rpl {
+    border-top: 4px solid #4285F4;
+}
+.jurusan-card.rpl .jurusan-icon {
+    background: #4285F4;
+}
+
+.jurusan-card.tkj {
+    border-top: 4px solid #34A853;
+}
+.jurusan-card.tkj .jurusan-icon {
+    background: #34A853;
+}
+
+.jurusan-card.animasi {
+    border-top: 4px solid #FBBC05;
+}
+.jurusan-card.animasi .jurusan-icon {
+    background: #FBBC05;
+}
+
+.jurusan-card.dkv {
+    border-top: 4px solid #EA4335;
+}
+.jurusan-card.dkv .jurusan-icon {
+    background: #EA4335;
+}
+
+.jurusan-card.tg {
+    border-top: 4px solid #673AB7;
+}
+.jurusan-card.tg .jurusan-icon {
+    background: #673AB7;
+}
+
+.jurusan-card h3 {
+    margin: 0 0 5px;
+    font-size: 1.3rem;
+}
+
+.jurusan-card p {
+    margin: 0 0 15px;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.jurusan-card ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.jurusan-card li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 0.9rem;
+}
+
+/* Stats Animation */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 20px;
+    min-width: 150px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: var(--gray);
+    font-size: 0.9rem;
+}

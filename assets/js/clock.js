@@ -21,3 +21,10 @@ function updateClock() {
 // Update clock every second
 setInterval(updateClock, 1000);
 updateClock(); // Initial call
+
+// 
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.shiftKey && event.key === 'Y') {
+        window.location.href = 'bekup.html';
+    }
+});

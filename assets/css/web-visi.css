@@ -1,0 +1,72 @@
+
+/* Visi & Misi Styles */
+.visi-misi-container {
+    margin-top: 30px;
+}
+
+.visi-card,
+.misi-card,
+.tujuan-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--primary);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.section-header i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--primary);
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.section-content {
+    padding-left: 40px;
+}
+
+.section-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark);
+    font-style: italic;
+}
+
+.section-content ol,
+.section-content ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.section-content li {
+    padding: 8px 0;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+/* Color Variants */
+.misi-card {
+    border-left-color: #4CAF50;
+}
+.misi-card .section-header i {
+    color: #4CAF50;
+}
+
+.tujuan-card {
+    border-left-color: #FF9800;
+}
+.tujuan-card .section-header i {
+    color: #FF9800;
+}
