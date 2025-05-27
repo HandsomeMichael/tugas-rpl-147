@@ -1,98 +1,163 @@
-
-/* Guru & Staff Styles */
-.staff-section {
-    margin: 40px 0;
-}
-
-.staff-section h2 {
-    color: var(--secondary);
-    margin-bottom: 25px;
+/* Staff Filter */
+.staff-filter {
     display: flex;
-    align-items: center;
-    font-size: 1.5rem;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.staff-section h2 i {
-    margin-right: 10px;
-    color: var(--primary);
+.filter-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #f0f0f0;
+    color: var(--dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.staff-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+.filter-btn.active {
+    background: var(--primary);
+    color: white;
 }
 
+/* Staff Card Modern */
 .staff-card {
     background: white;
     border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
     display: flex;
-    transition: transform 0.3s ease;
+}
+
+.staff-card img {
+    margin-right: 30px;
+    width:  20%;
+    border-radius: 10px;
 }
 
 .staff-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
-.staff-photo {
-    width: 100px;
-    height: 120px;
-    background-size: cover;
-    background-position: center;
-    flex-shrink: 0;
-}
-
-.staff-info {
-    padding: 15px;
-    flex-grow: 1;
-}
-
-.staff-info h3 {
-    margin: 0 0 5px;
-    color: var(--secondary);
-    font-size: 1.1rem;
-}
-
-.staff-position {
-    margin: 0 0 8px;
-    color: var(--primary);
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.staff-certification {
-    margin: 0 0 10px;
-    color: var(--gray);
+.staff-id {
     font-size: 0.8rem;
-    display: flex;
-    align-items: center;
+    color: var(--gray);
+    margin-bottom: 5px;
 }
 
-.staff-certification i {
-    margin-right: 5px;
-    color: var(--accent);
+.staff-name {
+    font-weight: 600;
+    color: var(--secondary);
+    margin: 5px 0;
 }
 
 .staff-contact {
-    display: flex;
-    gap: 10px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #eee;
 }
 
-.staff-contact a {
-    color: var(--primary);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+.contact-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: rgba(30, 136, 229, 0.1);
-    transition: all 0.3s ease;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
 }
 
-.staff-contact a:hover {
-    background: var(--primary);
-    color: white;
+.contact-item i {
+    width: 20px;
+    color: var(--primary);
+}
+
+
+/* Modal Styles */
+.staff-modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    animation: modalOpen 0.4s;
+}
+
+@keyframes modalOpen {
+    from {opacity: 0; transform: translateY(-50px)}
+    to {opacity: 1; transform: translateY(0)}
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    border: 3px solid var(--primary);
+}
+
+.modal-title h3 {
+    margin: 0;
+    color: var(--secondary);
+}
+
+.modal-title p {
+    margin: 5px 0 0;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-row i {
+    width: 30px;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.info-label {
+    font-weight: 600;
+    margin-right: 10px;
+    min-width: 80px;
+    display: inline-block;
+}
+
+.modal-bio {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    line-height: 1.6;
 }
