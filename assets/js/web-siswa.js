@@ -1,6 +1,21 @@
 // Prestasi Data
 const prestasiData = [
     {
+        title: "Juara 1 Lomba MLBB Tingkat Panjer",
+        description: "Tim Wisdinot ( RPL ) - 2025",
+        icon: "fa-trophy"
+    },
+    {
+        title: "Juara 2 Lomba Sumo Bot",
+        description: "Tim Sayang Mama ( GRED ) - 2025",
+        icon: "fa-trophy"
+    },
+    {
+        title: "Juara 1 Lomba Line Follower",
+        description: "Tim GRED - 2024",
+        icon: "fa-trophy"
+    },
+    {
         title: "Juara 1 Lomba Coding Tingkat Provinsi",
         description: "Tim Programming SMK TI Bali Global - 2023",
         icon: "fa-trophy"
@@ -52,8 +67,8 @@ const siswaData = [
     {
         nis: "202551001",
         name: "I Gogo Mahendra",
-        jurusan: "rpl",
-        kelas: "XII RPL 2",
+        jurusan: "dkv",
+        kelas: "XII DKV 2",
         phone: "081234567890",
         email: "tai@smktibaliglobal.sch.id",
         photo: "https://randomuser.me/api/portraits/men/1.jpg",
